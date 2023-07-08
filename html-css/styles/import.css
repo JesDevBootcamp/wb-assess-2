@@ -127,6 +127,7 @@
 }
 
 body {
+  min-width: 320px;
   font-family: "Nunito", sans-serif;
   margin: 0;
 }
