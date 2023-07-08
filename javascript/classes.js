@@ -6,7 +6,11 @@
 //   bicycles might come from different manufacturers
 // - Bicycles come in different colors (ex.: red, silver, blue…)
 class Bicycle {
-  // Replace this with your code
+	constructor(color, manufacturer) {
+		this.numWheels = 2;
+		this.color = color;
+		this.manufacturer = manufacturer;
+	}
 }
 
 // This User class is intended to be used in a web application where users can
@@ -25,7 +29,11 @@ class User {
   }
 
   processChangePassword(currentPassword, newPassword) {
-    // Replace this with your code
+	if (this.password === currentPassword) {
+		this.password = newPassword;
+		return true;
+	}
+	return false;
   }
 }
 
@@ -50,11 +58,14 @@ class Library {
   }
 
   createAndAddBook(title, author) {
-    // Replace this with your code
+	let book = new Book(title, author);
+	this.books.push(book);
   }
 
   findBooksByAuthor(author) {
-    // Replace this with your code
+	return this.books.filter(book => {
+		return book.author === author;
+	});
   }
 }
 
@@ -86,7 +97,16 @@ class Rectangle {
 }
 
 class Square extends Rectangle {
-  // Replace this with your code
+	constructor(number) {
+		super(number, number);
+	}
+
+	getArea() {
+		if (this.length === this.width) {
+			return super.getArea();
+		}
+		return undefined;
+	}
 }
 
 export { Bicycle, Book, Library, Rectangle, Square, User };
