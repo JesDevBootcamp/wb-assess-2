@@ -1,6 +1,126 @@
-/* Import: All CSS modules imported. */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* Header: Styles for the website navigation header. */
+#header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  display: block;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  padding: 16px 24px;
+  overflow: hidden;
+}
+#header div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  gap: 4px 16px;
+  margin: auto;
+}
+#header h2 {
+  color: rgb(42, 171, 226);
+}
+#header a[href] {
+  color: inherit;
+}
+#header nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 2px 24px;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import "header.css";
-@import "main.css";
-@import "page.css";
+/* Main: Styles for the website main content. */
+#main {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  max-width: 1280px;
+  gap: 24px 48px;
+  padding: 32px 24px;
+  margin: 0 auto;
+}
+
+#article, #aside {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+#article {
+  display: block;
+  flex: 2 1 640px;
+}
+
+#aside {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex: 1 1 320px;
+  gap: inherit;
+}
+#aside article {
+  display: block;
+  flex: inherit;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 16px rgba(102, 75, 75, 0.3);
+  padding: 32px 24px;
+  overflow: hidden;
+}
+#aside h2 {
+  text-align: center;
+}
+#aside img {
+  display: block;
+  width: 160px;
+  margin: 8px auto;
+}
+
+/* Page: Styles for the whole webpage. */
+*, ::before, ::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 4px 0;
+}
+
+h1 {
+  font-size: 1.953125em;
+}
+
+h2 {
+  font-size: 1.5625em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.8em;
+}
+
+h6 {
+  font-size: 0.64em;
+}
+
+a[href] {
+  color: rgb(42, 171, 226);
+}
+a[href]:not(:hover, :focus) {
+  text-decoration-line: none;
+}
