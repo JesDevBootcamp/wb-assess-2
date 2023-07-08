@@ -53,6 +53,26 @@
   flex: 2 1 640px;
 }
 
+.gallery {
+  display: block;
+}
+.gallery .header {
+  display: inline-block;
+}
+.gallery .link {
+  float: right;
+  clear: right;
+}
+.gallery .images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+  margin: 16px 0;
+}
+.gallery .link:focus + .images {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
 #aside {
   display: flex;
   flex-flow: row wrap;
