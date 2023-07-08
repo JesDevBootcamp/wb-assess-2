@@ -1,0 +1,9 @@
+/* Aside: Styles for the website secondary content. */
+
+.aside {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+	gap: 24px 32px;
+}

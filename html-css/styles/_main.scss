@@ -1,46 +1,17 @@
 /* Main: Styles for the website main content. */
 
-#main {
+.main {
 	display: flex;
 	flex-flow: row wrap-reverse;
 	max-width: 1280px;
 	gap: 24px 48px;
 	padding: 32px 24px;
 	margin: 0 auto;
-}
-
-#article, #aside {
-	max-width: 980px;
-	margin: 0 auto;
-}
-
-#article {
-	display: block;
-	flex: 2 1 640px;
-}
-
-#aside {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: flex-start;
-	align-content: flex-start;
-	flex: 1 1 320px;
-	gap: inherit;
-	& article {
-		display: block;
-		flex: inherit;
-		border-radius: 8px;
-		background-color: white;
-		box-shadow: 0 0 16px rgba(102, 75, 75, .3);
-		padding: 32px 24px;
-		overflow: hidden;
+	& > * {
+		flex: 1 1 320px;
 	}
-	& h2 {
-		text-align: center;
-	}
-	& img {
-		display: block;
-		width: 160px;
-		margin: 8px auto;
+	& > :first-child {
+		max-width: 980px;
+		flex: 1 1 640px;
 	}
 }

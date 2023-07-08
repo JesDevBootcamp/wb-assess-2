@@ -1,5 +1,33 @@
 /* Page: Styles for the whole webpage. */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* Aside: Styles for the website secondary content. */
+.aside {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 24px 32px;
+}
+
+/* Card: A basic floating card. */
+.card {
+  display: block;
+  flex: 1 1 auto;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 16px rgba(102, 75, 75, 0.3);
+  padding: 32px 24px;
+  overflow: hidden;
+}
+.card-title {
+  text-align: center;
+}
+.card-image {
+  display: block;
+  width: 160px;
+  margin: 8px auto;
+}
+
 /* Gallery: CSS for the webpage image gallery. */
 .gallery {
   display: block;
@@ -55,7 +83,7 @@
 }
 
 /* Main: Styles for the website main content. */
-#main {
+.main {
   display: flex;
   flex-flow: row wrap-reverse;
   max-width: 1280px;
@@ -63,41 +91,12 @@
   padding: 32px 24px;
   margin: 0 auto;
 }
-
-#article, #aside {
-  max-width: 980px;
-  margin: 0 auto;
-}
-
-#article {
-  display: block;
-  flex: 2 1 640px;
-}
-
-#aside {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  align-content: flex-start;
+.main > * {
   flex: 1 1 320px;
-  gap: inherit;
 }
-#aside article {
-  display: block;
-  flex: inherit;
-  border-radius: 8px;
-  background-color: white;
-  box-shadow: 0 0 16px rgba(102, 75, 75, 0.3);
-  padding: 32px 24px;
-  overflow: hidden;
-}
-#aside h2 {
-  text-align: center;
-}
-#aside img {
-  display: block;
-  width: 160px;
-  margin: 8px auto;
+.main > :first-child {
+  max-width: 980px;
+  flex: 1 1 640px;
 }
 
 *, ::before, ::after {
