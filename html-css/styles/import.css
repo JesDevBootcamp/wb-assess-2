@@ -1,7 +1,7 @@
 /* Page: Styles for the whole webpage. */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* Header: Styles for the website navigation header. */
-#header {
+.header {
   position: sticky;
   z-index: 1000;
   top: 0;
@@ -11,7 +11,7 @@
   padding: 16px 24px;
   overflow: hidden;
 }
-#header div {
+.header .wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -20,17 +20,17 @@
   gap: 4px 16px;
   margin: auto;
 }
-#header h2 {
+.header .title {
   color: rgb(42, 171, 226);
 }
-#header a[href] {
-  color: inherit;
-}
-#header nav {
+.header .links {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   gap: 2px 24px;
+}
+.header .links a[href] {
+  color: inherit;
 }
 
 /* Main: Styles for the website main content. */
