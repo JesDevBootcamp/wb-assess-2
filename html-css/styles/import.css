@@ -1,5 +1,26 @@
 /* Page: Styles for the whole webpage. */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* Gallery: CSS for the webpage image gallery. */
+.gallery {
+  display: block;
+}
+.gallery .title {
+  display: inline-block;
+}
+.gallery .link {
+  float: right;
+  clear: right;
+}
+.gallery .images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+  margin: 16px 0;
+}
+.gallery .link:focus + .images {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
 /* Header: Styles for the website navigation header. */
 .header {
   position: sticky;
@@ -51,26 +72,6 @@
 #article {
   display: block;
   flex: 2 1 640px;
-}
-
-.gallery {
-  display: block;
-}
-.gallery .header {
-  display: inline-block;
-}
-.gallery .link {
-  float: right;
-  clear: right;
-}
-.gallery .images {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 24px;
-  margin: 16px 0;
-}
-.gallery .link:focus + .images {
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 
 #aside {

@@ -1,0 +1,21 @@
+/* Gallery: CSS for the webpage image gallery. */
+
+.gallery {
+	display: block;
+	.title {
+		display: inline-block;
+	}
+	.link {
+		float: right;
+		clear: right;
+	}
+	.images {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 24px;
+		margin: 16px 0;
+	}
+	.link:focus + .images {
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	}
+}
