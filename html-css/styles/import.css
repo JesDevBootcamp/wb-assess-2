@@ -28,6 +28,28 @@
   margin: 8px auto;
 }
 
+/* Footer: Styles for the website footer. */
+.footer {
+  display: block;
+  background-color: rgb(42, 171, 226);
+  padding: 16px;
+  overflow: hidden;
+}
+.footer .footer-help {
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  display: block;
+  text-align: center;
+  width: 36px;
+  line-height: 32px;
+  border-radius: 9999px;
+  border: 2px solid currentColor;
+  background-color: inherit;
+  color: inherit;
+  float: right;
+}
+
 /* Gallery: CSS for the webpage image gallery. */
 .gallery {
   display: block;
