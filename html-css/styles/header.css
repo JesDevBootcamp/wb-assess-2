@@ -1,0 +1,39 @@
+/* Header: Styles for the website navigation header. */
+
+#header {
+	position: sticky;
+	z-index: 1000;
+	top: 0;
+	display: block;
+	background-color: rgb(37, 37, 37);
+	color: white;
+	padding: 16px 24px;
+	overflow: hidden;
+	& div {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1280px;
+		gap: 4px 16px;
+		margin: auto;
+	}
+	& h2 {
+		display: block;
+		font-size: calc(1em * 1.333 * 1.333);
+		color: rgb(42, 171, 226);
+		margin: 0;
+	}
+	& nav {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		gap: 2px 24px;
+	}
+	& a[href] {
+		color: inherit;
+		&:not(:hover, :focus) {
+			text-decoration-line: none;
+		}
+	}
+}
