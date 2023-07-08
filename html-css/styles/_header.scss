@@ -9,7 +9,7 @@
 	color: white;
 	padding: 16px 24px;
 	overflow: hidden;
-	.wrapper {
+	&-wrapper {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -18,16 +18,16 @@
 		gap: 4px 16px;
 		margin: auto;
 	}
-	.title {
+	&-title {
 		color: rgb(42, 171, 226);
 	}
-	.links {
+	&-links {
 		display: flex;
 		flex-flow: row wrap;
 		align-items: center;
 		gap: 2px 24px;
 	}
-	.links a[href] {
+	&-links a[href] {
 		color: inherit;
 	}
 }

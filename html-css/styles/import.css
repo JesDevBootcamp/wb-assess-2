@@ -32,7 +32,7 @@
   padding: 16px 24px;
   overflow: hidden;
 }
-.header .wrapper {
+.header-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -41,16 +41,16 @@
   gap: 4px 16px;
   margin: auto;
 }
-.header .title {
+.header-title {
   color: rgb(42, 171, 226);
 }
-.header .links {
+.header-links {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   gap: 2px 24px;
 }
-.header .links a[href] {
+.header-links a[href] {
   color: inherit;
 }
 
