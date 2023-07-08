@@ -1,6 +1,47 @@
 /* Page: Styles for the whole webpage. */
 
+*, ::before, ::after {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
 body {
 	font-family: 'Nunito', sans-serif;
 	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+	margin: 4px 0;
+}
+
+h1 {
+	font-size: calc(1em * 1.25 * 1.25 * 1.25);
+}
+
+h2 {
+	font-size: calc(1em * 1.25 * 1.25);
+}
+
+h3 {
+	font-size: calc(1em * 1.25);
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: calc(1em / 1.25);
+}
+
+h6 {
+	font-size: calc(1em / 1.25 / 1.25);
+}
+
+a[href] {
+	color: rgb(42, 171, 226);
+	&:not(:hover, :focus) {
+		text-decoration-line: none;
+	}
 }

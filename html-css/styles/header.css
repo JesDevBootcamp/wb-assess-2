@@ -19,21 +19,15 @@
 		margin: auto;
 	}
 	& h2 {
-		display: block;
-		font-size: calc(1em * 1.333 * 1.333);
 		color: rgb(42, 171, 226);
-		margin: 0;
+	}
+	& a[href] {
+		color: inherit;
 	}
 	& nav {
 		display: flex;
 		flex-flow: row wrap;
 		align-items: center;
 		gap: 2px 24px;
-	}
-	& a[href] {
-		color: inherit;
-		&:not(:hover, :focus) {
-			text-decoration-line: none;
-		}
 	}
 }
