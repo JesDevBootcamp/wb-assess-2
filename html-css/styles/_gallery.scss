@@ -2,20 +2,20 @@
 
 .gallery {
 	display: block;
-	.title {
+	&-title {
 		display: inline-block;
 	}
-	.link {
+	&-link {
 		float: right;
 		clear: right;
 	}
-	.images {
+	&-images {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 		gap: 24px;
 		margin: 16px 0;
 	}
-	.link:focus + .images {
+	&-link:focus + &-images {
 		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 	}
 }

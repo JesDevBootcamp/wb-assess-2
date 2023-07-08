@@ -4,20 +4,20 @@
 .gallery {
   display: block;
 }
-.gallery .title {
+.gallery-title {
   display: inline-block;
 }
-.gallery .link {
+.gallery-link {
   float: right;
   clear: right;
 }
-.gallery .images {
+.gallery-images {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 24px;
   margin: 16px 0;
 }
-.gallery .link:focus + .images {
+.gallery-link:focus + .gallery-images {
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 
